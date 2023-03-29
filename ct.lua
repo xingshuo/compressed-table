@@ -50,7 +50,7 @@ function M.NewTable(root, doc)
 					return '\3', "\0\0\0\0"
 				end
 			elseif t == "string" then
-                local sid = get_string_id(v)
+				local sid = get_string_id(v)
 				return '\5', string.pack("<I4", sid)
 			else
 				error ("Unsupport value " .. tostring(v))
