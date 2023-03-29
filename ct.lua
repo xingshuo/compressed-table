@@ -240,6 +240,10 @@ function M.NewTable(root, doc)
 				end
 
 				return next, result
+			end,
+			__len = function ()
+				local array_n = string.unpack("<I4", tstr)
+				return array_n
 			end
 		})
 
