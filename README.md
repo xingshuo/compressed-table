@@ -1,6 +1,7 @@
 # CompressedTable
 * 一种用查询效率换取存储空间的表的实现，可以像[]访问和pairs遍历普通lua table一样操作它
-* 一种可能的应用场景：游戏资源配置表，经线上项目配置资源实测CompressedTable资源内存占用仅为lua table资源的30 ~ 40%
+* 一种可能的应用场景：游戏资源配置表
+* 经线上项目配置资源实测：CompressedTable内存占用仅为lua table的30 ~ 40%，[]查询效率比lua table慢约100倍，pairs遍历比lua table慢约10倍
 
 ## Reference
 * https://github.com/cloudwu/skynet/blob/master/lualib/skynet/datasheet/dump.lua#L41

@@ -98,8 +98,6 @@ function M.NewTable(root, doc)
 			table.insert(types, vt)
 			table.insert(kvs, kv .. vv)
 		end
-
-
 		-- encode table
 		local typeset = table.concat(types)
 		local align = string.rep("\0", (4 - #typeset & 3) & 3)
